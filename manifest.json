@@ -1,0 +1,19 @@
+{
+  "name": "Chrome Download & Search History AutoCleaner",
+  "description": "Auto clean download and search history.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "clean.png"
+  },
+  "background": { "persistent": false, "scripts": ["background.js"] },
+  "permissions": [
+    "management",
+    "downloads",
+    "downloads.open",
+    "downloads.shelf",
+    "history",
+    "tabs"
+  ]
+}
